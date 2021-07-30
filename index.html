@@ -6,6 +6,12 @@ Small Loc Design
 
 Please mail me (sudarshan.khasnis@gmail.com) to get in touch.
 
+Color palette:
+000000
+BD4B4B
+EFB7B7
+EEEEEE
+
 -->
 
 <html lang="en">
@@ -16,10 +22,70 @@ Please mail me (sudarshan.khasnis@gmail.com) to get in touch.
 		<title>whereisud</title>
 
 		<style>
+			
+			
+			body{
+				background-color: #BD4B4B;
+				color: #EEEEEE;
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				font-size: 16px;
+			}
 
-			#maindiv{
+			.card
+			{
+				
+				box-shadow: 0 4px 8px 0 #EFB7B7;
+  				transition: 0.3s;
+  				border-radius: 5px; 
+				width: 40%;
+			}
+			.card:hover 
+			{
+				box-shadow: 0 8px 16px 0 #EFB7B7;
+			}
 
-				display:flex;
+			.container 
+			{
+				position: relative;
+				padding: 1.5em 1.5em;
+				margin: 1em 1em;
+			}
+			.verticalcenter
+			{
+				top:50%;
+			}
+			h1, p{
+				font-size: 1.2em;
+			}
+
+			#maindiv
+			{
+				display: flex;
+			}
+
+			#mapsidetext
+			{
+				margin-top: 0.4em;
+				position: absolute;
+				-moz-transform: rotate(90deg);
+				/* FF3.5+ */
+				-o-transform: rotate(90deg);
+				/* Opera 10.5 */
+				-webkit-transform: rotate(90deg);
+				/* Saf3.1+, Chrome */
+				-moz-transform-origin: 0% 0%;
+				-o-transform-origin: 0% 0%;
+				-webkit-transform-origin: 0% 0%;
+
+			}
+
+			#maintitle
+			{
+				margin-left: 10em;
+				margin-top: 4.8em;
+				position: absolute;
+				font-size: 5em;
+
 			}
 
 		</style>
@@ -29,14 +95,34 @@ Please mail me (sudarshan.khasnis@gmail.com) to get in touch.
 
 		
 		<div id="maindiv">
-			<h1 id="maintitle">whereissud</h1>
-			<p id="shortpara">Hola amigos! If you need anything ~ be it silver in shining cloud or a needle in a haystack, reach me ~ Adiosa, take caree!</p>
+			<h1 id="maintitle">whereissud?</h1>
 
-			<p id="contactme">Ring me up +918830871980</p>
-			<p id="emailme">Letter me up sudarshan.khasnis@gmail.com</p>
+			<div class="card">
+				<div class="container verticalcenter">
+					<p>Hola amigos!</p>
+					<p>If you need anything reach mee! </p>
+					<p> Adiosa, take care ~</p>
+				</div>
+				
+			</div>
+			
+			
+			<div class="card">
+				<div class="container">
+						<p id="mapsidetext">Daytime you'll see me loitering around here</p>
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=73.92958760261537%2C18.494434292884936%2C73.94003748893739%2C18.501963434748017&amp;layer=mapnik&amp;marker=18.49819890519289%2C73.93481254577637" style="border: 1px solid black"></iframe>
+				</div>
+			</div>
 
-			<h2 id="mapsidetext">Daytime you'll see me loitering around here</p>
-			<iframe id="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-82.38211870193483%2C29.610121723538644%2C-82.36121892929079%2C29.623925821971394&amp;layer=mapnik&amp;marker=29.617024009081657%2C-82.3716688156128" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=29.6170&amp;mlon=-82.3717#map=16/29.6170/-82.3717&amp;layers=N">View Larger Map</a></small>
+			<div class="card">
+				<div class="container">
+					<p id="contactme">Ring me up on +918830871980</p>
+					<p id="emailme">Letter me up at sudarshan.khasnis@gmail.com</p>
+				</div>
+			</div>
+			
+			
+			
 		</div>
 		
 
