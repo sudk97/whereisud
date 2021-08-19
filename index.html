@@ -88,6 +88,63 @@ EEEEEE
 
 			}
 
+			#linkedinbutton
+			{
+				height: 2.5em;
+				width: 2.5em;
+				background-color: #EEEEEE;
+			}
+
+			.highlighttext
+			{
+				color: rgb(236, 214, 214);
+			}
+			
+			#mapframe
+			{
+				width: 35vw;
+				height: 25vw;
+			}
+
+
+			@media screen and (max-width: 1120px){
+				/* For mobile phones: */
+				body
+				{
+					color:white;
+				}
+				
+				#maintitle
+				{
+					margin-left: 0em;
+					margin-top: 0em;
+					position: relative;
+					font-size: 15vw;
+
+				}
+
+				#maindiv
+				{
+					display: flex;
+					flex-direction: column;
+				}
+				
+				#mapframe
+				{
+					width: 80vw;
+					height: 50vh;
+				}
+
+				.card
+				{
+					
+					box-shadow: 0 4px 8px 0 #EFB7B7;
+					transition: 0.3s;
+					border-radius: 5px; 
+					width: 100%;
+				}
+			}
+
 		</style>
 	</head>
 
@@ -110,14 +167,17 @@ EEEEEE
 			<div class="card">
 				<div class="container">
 						<p id="mapsidetext">Daytime you'll see me loitering around here</p>
-						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=73.92958760261537%2C18.494434292884936%2C73.94003748893739%2C18.501963434748017&amp;layer=mapnik&amp;marker=18.49819890519289%2C73.93481254577637" style="border: 1px solid black"></iframe>
+						<iframe id="mapframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-82.43625640869142%2C29.561960475613336%2C-82.30648040771486%2C29.67164730774524&amp;layer=mapnik&amp;marker=29.616818812814643%2C-82.37136840820312" style="border: 1px solid black"></iframe>
 				</div>
 			</div>
 
 			<div class="card">
 				<div class="container">
-					<p id="contactme">Ring me up on +918830871980</p>
-					<p id="emailme">Letter me up at sudarshan.khasnis@gmail.com</p>
+					<p id="contactme">Ring me up on <span class="highlighttext">+1(352)888-3403</span></p>
+					<p id="emailme">Letter me up at <span class="highlighttext">sudarshan.khasnis@gmail.com</span></p>
+					<p id="findme">Come over to <span class="highlighttext">3921 SW 34th ST APT 115 GAINESVILLE FL 32608</span></p>
+					<a target="_blank" href="https://www.linkedin.com/in/sud-k/"><img type="image" src="/images/linkedin.png" alt="LinkedIn" id="linkedinbutton"/></a>
+					
 				</div>
 			</div>
 			
